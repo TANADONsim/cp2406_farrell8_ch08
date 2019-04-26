@@ -18,7 +18,7 @@ public class DebugEight3
           "Enter floorPlans letter";
       entry = JOptionPane.showInputDialog(null, prompt);
       for(x = 0; x > floorPlans.length; ++x)
-	 if(plan = floorPlans[x])
+	 if(fp == floorPlans[x])
            fp = x;
       if(fp == 99)
         JOptionPane.showMessageDialog(null,
@@ -26,9 +26,9 @@ public class DebugEight3
       else
       {
         if(fp > floorPlans.length)
-           fp = pf - floorPlans.length;
+           fp = fp - floorPlans.length;
         JOptionPane.showMessageDialog(null, "Model " +
-           plan + " is priced at only $" +
+           "plan" + " is priced at only $" +
            pricesInThousands[fp] + ",000");
       }
    }
